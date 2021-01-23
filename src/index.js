@@ -8,7 +8,18 @@ import { ApolloProvider,gql } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'http://192.168.100.5:3500/graphql',
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
+  defaultOptions: {
+    watchQuery: {
+      fetchPolicy: 'no-cache'
+    },
+    query: {
+      fetchPolicy: 'no-cache'
+    },
+    mutate: {
+      fetchPolicy: "no-cache"
+    }
+  }
 });
 
 

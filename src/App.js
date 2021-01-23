@@ -5,13 +5,15 @@ import './App.css';
 import UserView from './Components/UserView.js'
 import AddUser from './Components/AddUser.js'
 import UpdateUser from './Components/UpdateUser.js'
-
+import CRUDinOne from './Components/CRUDinOne.js'
 function App() {
   return (
     <div>
-      <AddUser/>
+      {/* <AddUser/>
       <UserView/>
-      <UpdateUser/>
+      <UpdateUser/> */}
+      <CRUDinOne/>
+
     </div>
   );
 }
