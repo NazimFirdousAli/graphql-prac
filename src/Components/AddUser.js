@@ -23,7 +23,7 @@ function AddUser() {
         >
           <input ref={node => { input = node;}}
           />
-          <button type="submit">Add User</button>
+          <button type="submit">Save</button>
         </form>
       </div>
     )

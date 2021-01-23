@@ -8,9 +8,9 @@ import UpdateUser from './Components/UpdateUser.js'
 
 function App() {
   return (
-    <div className="App">
-      <UserView/>
+    <div>
       <AddUser/>
+      <UserView/>
       <UpdateUser/>
     </div>
   );
